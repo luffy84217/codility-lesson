@@ -2,7 +2,7 @@ def solution(A):
     total = sum(A)
     min_diff = 0
 
-    for i in range(len(A)):
+    for i in range(len(A) - 1):
         total = total - 2 * A[i]
         diff = abs(total)
         if i == 0:
